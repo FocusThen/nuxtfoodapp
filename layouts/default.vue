@@ -1,14 +1,18 @@
 <template>
-  <div class="content">
-    <AppMenu />
-    <Nuxt />
+  <div>
+    <div class="content">
+      <AppMenu />
+      <Nuxt />
+    </div>
+    <AppFooter />
   </div>
 </template>
 
 <script>
+import AppFooter from "../components/AppFooter.vue";
 import AppMenu from "../components/AppMenu.vue";
 export default {
-  components: { AppMenu }
+  components: { AppMenu, AppFooter }
 };
 </script>
 

@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h1>about</h1>
-  </div>
+  <footer>
+    <span>focusthen 🐱‍💻</span>
+  </footer>
 </template>
 
 <script>
