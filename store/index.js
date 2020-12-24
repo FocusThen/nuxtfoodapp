@@ -1,5 +1,5 @@
 export const state = () => ({
-  fooddata: []
+  foodData: []
 });
 
 // export const getters = {
@@ -10,13 +10,13 @@ export const state = () => ({
 
 export const mutations = {
   updateFoodData: (state, data) => {
-    state.fooddata = data;
+    state.foodData = data;
   }
 };
 
 export const actions = {
   async getFoodData({ state, commit }) {
-    if (state.fooddata.length) return;
+    if (state.foodData.length) return;
 
     try {
       await fetch(
