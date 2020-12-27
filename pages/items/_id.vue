@@ -46,6 +46,12 @@
           <label :for="addon">{{ addon }}</label>
         </div>
       </fieldset>
+
+
+      <AppToast>
+         Order submitted <br/>
+        Check out more <nuxt-link to="/restaurants">restaurants</nuxt-link>!
+      </AppToast>
     </section>
 
     <section class="options">
@@ -57,8 +63,10 @@
 
 <script>
 import { mapState } from "vuex";
+import AppToast from '../../components/AppToast.vue';
 
 export default {
+  components: { AppToast },
   data() {
     return {
       id: this.$route.params.id,
