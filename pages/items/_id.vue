@@ -5,7 +5,7 @@
       :style="`background: url(/${currentItem.img}) no-repeat center center`"
     ></section>
 
-    <section class="details">
+    <section class="detail">
       <h1>{{ currentItem.item }}</h1>
 
       <h3>Price: ${{ currentItem.price.toFixed(2) }}</h3>
@@ -106,7 +106,7 @@ export default {
         count: this.count,
         options: this.itemOptions,
         addOns: this.itemAddons,
-        combinedPrice: thos.combinedPrice
+        combinedPrice: this.combinedPrice
       };
 
       this.cartSubmitted = true;

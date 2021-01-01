@@ -4,7 +4,10 @@
     height="40"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 81.5 89.3"
+    aria-labelledby="logo"
+    role="presentation"
   >
+    <title id="logo">Logo showing plate and fork and knife</title>
     <g id="utensils">
       <path
         d="M67.5,79.2V73.4h0V32.6a2,2,0,0,0-2.1-2,6.6,6.6,0,0,0-4.9,2.2c-7.1,7.1-6.9,31.5-6.8,34.3v2h9.7v8.7h0v7.4h0v8.1a2,2,0,0,0,2,2,2,2,0,0,0,2.1-2V79.2Z"
@@ -27,10 +30,14 @@ export default {};
 </script>
 
 <style lang="scss" scoped>
+svg {
+  fill: #fff;
+}
+
 .cls-1,
 .cls-2 {
   fill: none;
-  stroke: #000;
+  stroke: #fff;
   stroke-miterlimit: 10;
 }
 
@@ -40,5 +47,11 @@ export default {};
 
 .cls-2 {
   stroke-width: 4px;
+}
+
+@media screen and (max-width: 600) {
+  #circles {
+    display: none;
+  }
 }
 </style>
